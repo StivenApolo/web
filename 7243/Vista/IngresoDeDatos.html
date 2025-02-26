@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina</title>
+    <link rel="stylesheet" href="../Publico/css/banner.css">
+    <link rel="stylesheet" href="../Publico/css/keyframes.css">
+    <link rel="stylesheet" href="../Publico/css/style.css">
+    <link rel="stylesheet" href="../Publico/ext/bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1 class="text-center mb-4">Ingreso de datos de productos</h1>
+            <form action="..\Modelo\IngresarDatos.php" method="post">
+                
+                <div class="form-group">
+                    <label for="nombre">Ingrese el nombre del producto</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="categoria">Seleccione la categoria del producto</label>
+                    <select name="categoria" id="categoria" class="form-control">
+                        <option value="1">Electronica</option>
+                        <option value="2">Accesorios</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Ingrese el precio del producto</label>
+                    <input type="text" class="form-control" name="precio" id="precio" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="stock">Ingrese el stock del producto</label>
+                    <input type="text" class="form-control" name="stock" id="stock" required>
+                </div>
+                <div class="text-center">
+                    <input type="submit" class="btn btn-primary" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="ext/bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="ext/bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
